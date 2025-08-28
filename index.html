@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GenZ Pasanga</title>
+  <link rel="icon" href="assets/Genzicon.ico">
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  
+
+</head>
+<body>
+  <div id="loading-screen">
+    <div class="loader">
+      <span>G</span><span>e</span><span>n</span><span>Z</span> <span>P</span><span>a</span><span>s</span><span>a</span><span>n</span><span>g</span><span>a</span>
+    </div>
+  </div>
+
+  <!-- Navbar with Logo -->
+  <header class="navbar">
+    <a href="index.html" class="logo-link">
+      <img src="assets/logo.png" alt="GenZ Pasanga Logo" class="logo-img">
+    </a>
+    <nav class="nav-links">
+    
+      <a href="index.html">Home</a>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSdFVbsDR9Sv16GEka7olNiDMEHZaSNxA9WqUCGM-xeS7n0MNg/viewform" target="_blank">Submit Film</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="hero">
+    <div class="hero-content" data-aos="fade-up">
+      <h1 class="hero-title">Welcome to GenZ Pasanga</h1>
+      <p class="hero-subtitle">A Community of Creative Short Filmmakers</p>
+      <a href="#portfolio" class="cta-btn">View Films</a>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <main>
+    <section id="portfolio" class="portfolio-section">
+      <div class="container">
+        <div class="section-title">
+          <h2>Latest Short Films</h2>
+          <p>Check out the latest films submitted by our GenZ creators!</p>
+        </div>
+        <div class="portfolio-grid">
+          <div class="portfolio-item" data-aos="zoom-in">
+            <div class="portfolio-thumb">
+              <img src="assets\naanorualien.jpg" alt="Film 1 Thumbnail">
+              <div class="overlay">
+                <h3>Sample Short Film 1</h3>
+              <a href="film.html#naanorualien">View Film</a>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-item" data-aos="fade-up" data-aos-delay="100">
+            <div class="portfolio-thumb">
+              <img src="assets/MARMADESHAM.jpg" alt="Film 2 Thumbnail">
+              <div class="overlay">
+                <h3>Sample Short Film 2</h3>
+              <a href="film.html#marmadesham">View Film</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Add more .portfolio-item blocks as needed -->
+
+        </div>
+      </div>
+    </section>
+
+    <section class="form-section">
+      <h2 class="section-title">Submit Your Short Film</h2>
+      <a href="https://forms.gle/AebjZq8g6qBX7q62A" target="_blank" class="cta-btn">
+        Open Submission Form
+      </a>
+    </section>
+    
+  </main>
+
+  <!-- AOS Animation Library -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  </script>
+
+  <!-- Loading Screen Fade Out -->
+  <script>
+    window.addEventListener("load", function () {
+      setTimeout(() => {
+        const loadingScreen = document.getElementById("loading-screen");
+        loadingScreen.style.opacity = 0;
+        setTimeout(() => {
+          loadingScreen.style.display = "none";
+        }, 500); // fade-out time
+      }, 1600); // ⏳ delay for 2 seconds before fade-out
+    });
+  </script>
+  
+  </script>
+<!-- ... all your content like hero, portfolio, etc. ... -->
+
+<!--  Place this just before closing body tag -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+<script>
+  VanillaTilt.init(document.querySelector(".hero-content"), {
+    max: 15,
+    speed: 400,
+    glare: true,
+    "max-glare": 0.3,
+  });
+</script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    once: true,          // Only animate once
+    duration: 1000,      // Animation duration in ms
+    offset: 120,         // Offset from the original trigger point
+  });
+</script>
+<!-- Footer Section -->
+<footer class="footer-section" id="about">
+  <div class="footer-container">
+    <h2>About GenZ Pasanga</h2>
+    <p class="about-description">
+      GenZ Pasanga is an upcoming community platform focused on presenting and releasing quality short films. <br>
+      We're here to support new talents, creators, and storytellers – giving them a space to shine and grow together.
+    </p>
+
+    <div class="footer-socials">
+      <a href="https://www.instagram.com/genzpasanga/" target="_blank">📸 Instagram</a>
+      <a href="mailto:todaytamilmovies22@gmail.com">📧 Contact</a>
+      <a href="https://www.youtube.com/@genzpasanga">🔗Youtube</a>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
